@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raphael Tandiono - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Typography */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Work+Sans:wght@300;400;600&display=swap');
+
+        :root {
+            --primary: #1a1a1a;
+            --secondary: #4a4a4a;
+            --background: #ffffff;
+            --accent: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--primary);
+            background: var(--background);
+        }
+
+        /* Header Styles */
+        header {
+            padding: 8rem 2rem;
+            text-align: center;
+            background: var(--primary);
+            color: var(--background);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 1rem;
+            background: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.9rem;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background: var(--primary);
+            margin-top: 0.5rem;
+        }
+
+        /* Experience Cards */
+        .experience-card {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: var(--accent);
+            border-left: 4px solid var(--primary);
+        }
+
+        .experience-card h3 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-card .date {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 4rem 1rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Raphael Tandiono</h1>
+        <p class="subtitle">Inclusive Innovation Student & Project Manager</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="experience-card">
+            <h3>Singapore Management University</h3>
+            <div class="date">Aug 2023 - Present</div>
+            <p>Bachelor of Integrative Studies, Inclusive Innovation</p>
+            <p>CGPA: 3.60/4.00; Magna Cum Laude</p>
+            <p>ASEAN Undergraduate Scholarship Recipient</p>
+        </div>
+        <div class="experience-card">
+            <h3>Anglo-Chinese Junior College</h3>
+            <div class="date">Jan 2021 - Dec 2022</div>
+            <p>Rank Point: 88/90</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="experience-card">
+            <h3>World Business Council for Sustainable Development</h3>
+            <div class="date">Sep 2024 - Present</div>
+            <p>Member Engagement Intern</p>
+            <p>Organizing and coordinating regional events including sustainability conferences for C-Suites of over 200 leading businesses.</p>
+        </div>
+        <div class="experience-card">
+            <h3>Poetyque Events & Magna Experiences</h3>
+            <div class="date">Dec 2022 - Present</div>
+            <p>Project Manager</p>
+            <p>Managing large-scaled international weddings and parties for High Net Worth Individuals with budgets exceeding £1 million.</p>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Awards & Achievements</h2>
+        <div class="experience-card">
+            <p>• Best Presentation at AUN-ITB 2024 Summer Camp</p>
+            <p>• Champion of Singapore Business Case Competition 2024</p>
+            <p>• 2nd Prize Winner of NUS Political Association Chancellor's Challenge Shield Essay Competition 2022</p>
+            <p>• Silver Medal recipient of the Singapore Youth Leadership Summit 2021</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <a href="mailto:r.tandiono.2023@cis.smu.edu.sg">
+                <i class="fas fa-envelope"></i>
+                Email
+            </a>
+            <a href="tel:+6580179224">
+                <i class="fas fa-phone"></i>
+                Phone
+            </a>
+            <a href="https://www.linkedin.com/in/raphael-tandiono-314ab72a8" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+        </div>
+    </section>
+</body>
+</html>
