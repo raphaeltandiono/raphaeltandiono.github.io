@@ -6,15 +6,14 @@
     <title>Raphael Tandiono</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* Typography */
-        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
 
         :root {
-            --text: #1c1c1c;
-            --background: #ffffff;
-            --subtle: #666666;
-            --link: #1c1c1c;
-            --link-hover: #666666;
+            --bg-color: #f7f7f7;
+            --text-color: #171717;
+            --accent-color: #2563eb;
+            --subtle-color: #525252;
         }
 
         * {
@@ -23,121 +22,107 @@
             box-sizing: border-box;
         }
 
-        html {
-            font-size: 20px;
-            line-height: 1.6;
-        }
-
         body {
-            font-family: 'Inter', sans-serif;
-            color: var(--text);
-            background: var(--background);
-            margin: 0 auto;
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
             padding: 2rem;
-            max-width: 680px;
-            letter-spacing: -0.011em;
-        }
-
-        /* Header & Navigation */
-        header {
-            margin-bottom: 4rem;
+            max-width: 65ch;
+            margin: 0 auto;
         }
 
         h1 {
+            font-family: 'Space Mono', monospace;
             font-size: 2rem;
-            font-weight: 500;
             margin-bottom: 0.5rem;
-            letter-spacing: -0.02em;
+            font-weight: 700;
         }
 
         .subtitle {
-            font-size: 1.2rem;
-            color: var(--subtle);
-            font-style: italic;
+            font-family: 'Space Mono', monospace;
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
         }
 
         nav {
-            margin: 3rem 0;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.8rem;
+            margin: 2rem 0;
+            border-top: 1px solid var(--subtle-color);
+            border-bottom: 1px solid var(--subtle-color);
+            padding: 1rem 0;
         }
 
         nav ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
             list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
         }
 
-        a {
-            color: var(--link);
+        nav a {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.9rem;
             text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: all 0.2s ease;
+            color: var(--text-color);
+            transition: color 0.2s ease;
         }
 
-        a:hover {
-            color: var(--link-hover);
-            border-bottom-color: var(--link-hover);
+        nav a:hover {
+            color: var(--accent-color);
         }
 
-        /* Sections */
         section {
-            margin-bottom: 4rem;
+            margin: 4rem 0;
         }
 
         h2 {
+            font-family: 'Space Mono', monospace;
             font-size: 1.5rem;
-            font-weight: 500;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .major-description {
+            font-size: 1.1rem;
             margin-bottom: 1.5rem;
-            letter-spacing: -0.02em;
+        }
+
+        .date {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--subtle-color);
         }
 
         h3 {
             font-size: 1.2rem;
-            font-weight: 500;
-            margin: 2rem 0 0.5rem;
-        }
-
-        .date {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.8rem;
-            color: var(--subtle);
+            margin-top: 1.5rem;
             margin-bottom: 0.5rem;
         }
 
-        .major-description {
-            margin: 1rem 0;
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
-
-        .thesis-link {
-            display: inline-block;
-            margin-top: 1rem;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.8rem;
-        }
-
-        /* Achievements */
         .achievements p {
             margin-bottom: 0.5rem;
         }
 
-        /* Contact */
         .contact-info {
             display: flex;
             gap: 2rem;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.8rem;
+            flex-wrap: wrap;
         }
 
-        /* Mobile Adjustments */
-        @media (max-width: 768px) {
-            html {
-                font-size: 18px;
-            }
+        .contact-info a {
+            font-family: 'Space Mono', monospace;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
 
+        .contact-info a:hover {
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
             body {
                 padding: 1.5rem;
             }
@@ -156,66 +141,51 @@
 <body>
     <header>
         <h1>Raphael Tandiono</h1>
-        <div class="subtitle">Sustainable Strategy & Innovation</div>
+        <div class="subtitle">Exploring sustainable futures through strategy & innovation</div>
         
         <nav>
             <ul>
-                <li><a href="#major">Major</a></li>
-                <li><a href="#thesis">Thesis</a></li>
+                <li><a href="#major">About</a></li>
+                <li><a href="#thesis">Research</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="major">
-        <h2>My Major</h2>
+        <h2>About</h2>
         <div class="major-description">
-            Sustainable Strategy and Innovation is a field that focuses on creating long-term value for businesses and society by integrating sustainability principles into strategic decision-making and innovation processes. It involves developing innovative solutions that address environmental, social, and economic challenges while driving business growth and competitiveness. This interdisciplinary field combines elements of business strategy, sustainability science, and innovation management to create a more sustainable and resilient future.
+            I'm focused on creating sustainable value through strategic innovation. My work explores the intersection of business strategy and environmental stewardship, developing solutions that benefit both organizations and our planet.
         </div>
     </section>
 
     <section id="thesis">
-        <h2>My Thesis</h2>
-        <h3>Uncovering The Right Fit and Hidden Gaps in Sustainability Consulting</h3>
-        <p><a href="https://drive.google.com/drive/folders/18ZqPhV3DFBc6CuogrCovepm27PciacEn?usp=drive_link" 
-              target="_blank" 
-              class="thesis-link">View Thesis Documentation →</a></p>
+        <h2>Research</h2>
+        <div class="major-description">
+            Currently investigating the evolving landscape of sustainability consulting, uncovering hidden opportunities and alignment challenges between consultants and organizations committed to sustainable transformation.
+        </div>
     </section>
 
     <section id="education">
         <h2>Education</h2>
         <h3>Singapore Management University</h3>
-        <div class="date">Aug 2023 - Present</div>
+        <div class="date">2023 - Present</div>
         <p>Bachelor of Integrative Studies, Sustainable Strategy & Innovation</p>
-        <p>Magna Cum Laude, ASEAN Undergraduate Scholarship Recipient</p>
-        <p>Growth-X Analyst, Engagement & Partnership Development in AIESEC</p>
+        <p>ASEAN Undergraduate Scholar</p>
     </section>
 
     <section id="experience">
-        <h2>Work Experience</h2>
+        <h2>Experience</h2>
         
         <h3>World Business Council for Sustainable Development</h3>
-        <div class="date">Sep 2024 - Present</div>
+        <div class="date">2024 - Present</div>
         <p>Member Engagement Intern</p>
-        <p>Organizing and coordinating regional events including sustainability conferences for C-Suites of over 200 leading businesses.</p>
 
         <h3>Poetyque Events & Magna Experiences</h3>
-        <div class="date">Dec 2022 - Present</div>
+        <div class="date">2022 - Present</div>
         <p>Project Manager</p>
-        <p>Managing large-scale international weddings and parties for High Net Worth Individuals with budgets exceeding £1 million.</p>
-    </section>
-
-    <section id="achievements">
-        <h2>Awards & Achievements</h2>
-        <div class="achievements">
-            <p>• Best Presentation at AUN-ITB 2024 Summer Camp</p>
-            <p>• Champion of Singapore Business Case Competition 2024</p>
-            <p>• 2nd Prize Winner of NUS Political Association Chancellor's Challenge Shield Essay Competition 2022</p>
-            <p>• Silver Medal recipient of the Singapore Youth Leadership Summit 2021</p>
-        </div>
     </section>
 
     <section id="contact">
@@ -223,7 +193,7 @@
         <div class="contact-info">
             <a href="mailto:r.tandiono.2023@cis.smu.edu.sg">r.tandiono.2023@cis.smu.edu.sg</a>
             <a href="tel:+6580179224">+65 8017 9224</a>
-            <a href="https://www.linkedin.com/in/raphael-tandiono-314ab72a8" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/raphael-tandiono-314ab72a8">LinkedIn</a>
         </div>
     </section>
 </body>
