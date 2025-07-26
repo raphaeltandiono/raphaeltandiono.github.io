@@ -102,8 +102,18 @@
             margin-bottom: 0.5rem;
         }
 
-        .achievements p, .experience p, .education p {
+        .achievements p, .experience p, .education p, .projects p {
             margin-bottom: 0.5rem;
+        }
+        
+        .projects a, .experience a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .projects a:hover, .experience a:hover {
+            text-decoration: underline;
         }
 
         .contact-info {
@@ -165,15 +175,20 @@
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="projects">
         <h2>Projects & Research</h2>
         <h3>SMU Growth-X Consulting</h3>
         <div class="date">Sep 2024 - Present</div>
         <p><b>Project Leader:</b> Led a team of analysts to venture build an education-focused travel startup catered to the elderly.</p>
         <p><b>Analyst:</b> Delivered a comprehensive sustainability-focused go-to-market strategy and benchmarking for an aquarium in one of Singapore's largest integrated resorts.</p>
+        <p>
+            <a href="https://drive.google.com/drive/folders/18ZqPhV3DFBc6CuogrCovepm27PciacEn?usp=sharing" target="_blank">
+                Explore my research portfolio →
+            </a>
+        </p>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="experience">
         <h2>Experience</h2>
 
         <h3>PricewaterhouseCoopers (PwC)</h3>
@@ -183,6 +198,11 @@
         <h3>Motion Ventures</h3>
         <div class="date">Mar 2025 - Aug 2025</div>
         <p>Portfolio & Ecosystem Analyst, Intern. Conducted strategic investor outreach for Fund II (US$100m) and tracked performance for 30+ portfolio companies in marine and climate technology.</p>
+        <p>
+            <a href="https://raphaeltandiono.github.io/MVM-A25/" target="_blank">
+                View Maritime M&A Report →
+            </a>
+        </p>
         
         <h3>World Business Council for Sustainable Development (WBCSD)</h3>
         <div class="date">Sep 2024 - Dec 2024</div>
@@ -193,7 +213,7 @@
         <p>Project Manager. Planned and executed over 50 large-scale events for high-net-worth individuals, with budgets exceeding £1 million, across locations like Indonesia, Singapore, Japan, South Africa, Italy, and the UK.</p>
     </section>
 
-    <section id="achievements">
+    <section id="achievements" class="achievements">
         <h2>Notable Achievements</h2>
         <h3>Sustainable Investment Stock Pitch Competition 2025</h3>
         <p>Champion. Led the development of an ESG-driven stock pitch, involving comprehensive financial modeling.</p>
@@ -208,7 +228,7 @@
         <p>Champion (out of 94 teams). Developed a solution for sustainable rice cultivation in Ghana, winning a fully paid trip for implementation with Olam Agri.</p>
     </section>
 
-    <section id="education">
+    <section id="education" class="education">
         <h2>Education</h2>
         <h3>Singapore Management University</h3>
         <div class="date">2023 - 2027</div>
